@@ -1,0 +1,90 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 150px;
+}
+
+/* Navigation Links */
+.header-nav {
+  display: flex;
+  gap: 30px;
+  flex-grow: 1; /* Makes the nav take up all available space */
+  margin-left: 20px; /* Adds some space between logo and nav */
+}
+
+.header-nav select,
+.header-nav a {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header-nav a {
+  text-decoration: none;
+}
+
+/* Book a Meeting Button */
+.header-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .header-logo img {
+    width: 120px;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-left: 0; /* Remove margin on mobile */
+  }
+
+  .header-nav select {
+    width: 90%;
+    padding: 10px;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  .header-nav a {
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+  }
+
+  .header-button {
+    font-size: 14px;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+  }
+}

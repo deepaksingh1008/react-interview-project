@@ -1,0 +1,105 @@
+/* Hero.css */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 50%;
+  position: relative;
+  z-index: 1; /* Keeps the content above the background elements */
+}
+
+.hero h1 {
+  font-size: 100px; /* Make the text large */
+  margin-bottom: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the text */
+  opacity: 0.1; /* Makes it translucent */
+  z-index: 0; /* Behind everything */
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cta-button {
+  padding: 15px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.watch-intro {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.watch-intro img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.hero-image img {
+  width: 400px;
+  z-index: 1; /* Keeps the image above the background text */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+    top: 30%;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .watch-intro img {
+    width: 40px;
+    height: 40px;
+  }
+}
